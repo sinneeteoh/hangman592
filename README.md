@@ -13,6 +13,8 @@ Before running the file, activate conda environment which is stored in a yml fil
 This file contains all the packages in the specified version needed to run this project.
 
 ## File structure 
+milestone_2.py contains random method to generate random value from a list with specified values.
 
+milestone_3.py contains 2 functions: `ask_for_input` and `check_guess`.
 
 ## License information
