@@ -17,4 +17,6 @@ milestone_2.py contains random method to generate random value from a list with 
 
 milestone_3.py contains 2 functions: `ask_for_input` and `check_guess`.
 
+milestone_4.py contains class and its methods from 2 functions in milestone_3.py but check_guess method is refined to contain further arguments.
+
 ## License information

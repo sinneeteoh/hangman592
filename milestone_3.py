@@ -1,4 +1,4 @@
-# Write a code that will continuously ask the user for a letter and validate it
+# Iteratively check if the input is a valid guess
 def ask_for_input():
     guess = input("Please input a letter: ")
 
@@ -9,7 +9,8 @@ def ask_for_input():
         if guess.isalpha() == True:
             print(guess)
             break
-
+    
+    check_guess(guess)
 # check whether the guess is in the word
 
 def check_guess(guess):
@@ -20,4 +21,5 @@ def check_guess(guess):
         print(f"Good guess! {guess} is in the word.")
     else:
         print(f"Sorry, {guess} is not in the word. Try again.")
-    
+
+ask_for_input()   
