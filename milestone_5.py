@@ -17,12 +17,13 @@ class Hangman:
             for index,char in enumerate(list(self.word)):
                 if char == guess:
                     self.word_guessed[index] = guess
-                    print(self.word_guessed)
+                    
                 else: 
                     self.num_lives -=1
                     print(f"Sorry,{guess} is not in the word.")
                     print(f"You have {self.num_lives} lives left.")
             self.num_letters -=1
+            print(self.word_guessed)
         else:
             print(f"Sorry, {guess} is not in the word. Try again.")
 
@@ -43,12 +44,13 @@ def play_game(word_list):
     num_lives = 5
     game = Hangman(word_list, num_lives)
     while True: 
-        if num_lives == 0:
+        if game.num_lives == 0:
             print("You lost")
-        elif num_lives >0:
+        elif game.num_lives >0:
             game.ask_for_input()
         else: 
             print("Congratulations. You won the game!")
+        break
     
         
 play_game(["mango", "honeydew", "durian", "dragonfruit", "kiwi"])
