@@ -6,7 +6,7 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 ## Installation instruction 
-
+Git clone this repository then run the milestone_5.py file which will start the game.
 
 ## Usage instruction
 Before running the file, activate conda environment which is stored in a yml file named hangman_env.
@@ -19,4 +19,7 @@ milestone_3.py contains 2 functions: `ask_for_input` and `check_guess`.
 
 milestone_4.py contains class and its methods from 2 functions in milestone_3.py but check_guess method is refined to contain further arguments.
 
+milestone_5.py contains the complete script with docstrings.
+
 ## License information
+No license required.
