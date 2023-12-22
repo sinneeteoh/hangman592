@@ -29,7 +29,9 @@ milestone_3.py contains 2 functions: `ask_for_input` and `check_guess`.
 
 milestone_4.py contains class and its methods from 2 functions in milestone_3.py but check_guess method is refined to contain further arguments.
 
-milestone_5.py contains the complete script with docstrings.
+milestone_5.py contains the 1st version of full script with docstrings.
+
+milestone_5_reviewed.py contains milestone_5.py with feedbacks.
 
 ## License information
 No license required.
