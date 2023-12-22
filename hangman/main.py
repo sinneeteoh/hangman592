@@ -70,8 +70,8 @@ def play_game(word_list):
 if __name__ == "__main__":
     print("File",__name__,"is successfully executed.")
     play_game(["mango", "honeydew", "durian", "dragonfruit", "kiwi"])
-# TODO: Add an if __name__ == '__main__': here  
-# and add the last two lines of code inside it
+
+
    
 
 

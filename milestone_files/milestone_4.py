@@ -14,15 +14,19 @@ class Hangman:
         guess = guess.lower()
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
+            # Replace the underscore(s) in the word_guessed with the guessed letter
             for c in range(len(self.word)):
-                if self.word[c] == guess:
-                    self.word_guessed[c] = guess
-                    #print(self.word_guessed)
+                if c == guess: 
+                    #find the index position of the letter in the word
+                    index = self.word.index(c)
+                    #replace the "-" at the right index in the word_guessed
+                    self.word_guessed[index] = c
+                    print(self.word_guessed)
                 else: 
                     self.num_lives =-1
                     print(f"Sorry,{guess} is not in the word.")
-                    print(f"YOu have {self.num_lives} lives left.")
-            self.num_letters =-1
+                    print(f"You have {self.num_lives} lives left.")
+            self.num_letters =self.num_letters-1
         else:
             print(f"Sorry, {guess} is not in the word. Try again.")
 
@@ -37,15 +41,12 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
-                break
+
 
 word_list = ["mango", "honeydew", "durian", "dragonfruit", "kiwi"]
 game = Hangman(word_list)
 game.ask_for_input()
 
 
-word = "thankfully"
-print(word)
-count = len(set(word))
-print(count)
+
 
