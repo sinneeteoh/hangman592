@@ -8,7 +8,7 @@ class Hangman:
 
     def __init__(self,word_list, num_lives):
         """
-        A constructor which is automatically called when a new instance of a class is created. 2 attributes are in this constructor.
+        A constructor which is automatically called when a new instance of a class is created.
         """
         self.word_list = word_list
         self.num_lives = num_lives
@@ -19,7 +19,7 @@ class Hangman:
 
     def check_guess(self, guess):
         """
-        A method which takes in guess as an attribute then check if the guess letter is in the randomly chosen word.
+        A method which takes in guess as an attribute then check if the guess is in the randomly chosen word.
         """
         guess = guess.lower()
         if guess in self.word:
@@ -35,7 +35,7 @@ class Hangman:
 
     def ask_for_input(self):
         """
-        A method which ask player for input then check if the letter is an alphabet and if it has been previously guessed.
+        A method which asks player for input then check the letter if alphabetical and has been previously guessed.
         """
         while True: 
             guess = input("Please input a letter: ")
@@ -51,7 +51,7 @@ class Hangman:
 
 def play_game(word_list):
     """
-    A function outside the class which will start the game by creating an instance of the Hangman class using a variable called game. 
+    A function which will start the game by creating an instance (game) of the Hangman class. 
     """
     num_lives = 5
     game = Hangman(word_list, num_lives)

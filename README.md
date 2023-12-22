@@ -9,7 +9,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 Open terminal and select git bash as the command-line interface.
 Make sure that you are in the specified directory. 
 Type `git clone` and copy this HTTPs URL <https://github.com/sinneeteoh/hangman592.git> then add the url after the word `git clone`, press enter.
-Open the file named main.py in hangman folder, run the script which will start the game.
+Open the file named main.py, run the script which will start the game.
 
 ## Usage instruction
 Before running the file, activate conda environment which is stored in a yml file named hangman_env.
